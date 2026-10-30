@@ -1,0 +1,427 @@
+.hero-section {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: calc(100svh - 142px);
+  min-height: 610px;
+  max-height: 690px;
+  overflow: hidden;
+  background: var(--color-light-blue);
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  fill: var(--color-light-blue);
+}
+
+.hero-truck {
+  z-index: 0;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: 355px;
+
+  margin-left: 40px;
+  padding-top: 108px;
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  color: var(--color-navy);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(30px, 2.7vw, 35px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+.hero-content h1 span {
+  display: block;
+}
+
+.hero-heading-highlight {
+  color: var(--color-blue);
+}
+
+.hero-content p {
+  width: 335px;
+
+  margin: 28px 0 0;
+
+  color: var(--color-black);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(17px, 1.65vw, 20px);
+  font-weight: 300;
+  line-height: 1.4;
+
+  text-shadow: 0 1px 3px rgb(0 0 0 / 24%);
+}
+
+.hero-cta {
+  width: 238px;
+  height: 48px;
+
+  margin-top: 54px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  border-radius: 14px;
+
+  background: var(--color-cyan);
+  color: var(--color-white);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.hero-cta:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.96);
+}
+
+.hero-cta svg {
+  flex: 0 0 auto;
+}
+
+.hero-wave {
+  position: absolute;
+  z-index: 3;
+
+  left: -2px;
+  right: -2px;
+  bottom: -1px;
+
+  width: calc(100% + 4px);
+  height: 88px;
+
+  display: block;
+  border: 0;
+  outline: 0;
+
+  fill: var(--color-light-blue);
+}
+
+.hero-wave path {
+  stroke: none;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hero-section {
+    height: calc(100svh - 142px);
+
+    min-height: 590px;
+    max-height: 680px;
+  }
+
+  .hero-truck {
+    object-position: 57% center;
+  }
+
+  .hero-content {
+    width: 325px;
+
+    margin-left: 30px;
+    padding-top: 94px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    width: 300px;
+
+    margin-top: 25px;
+
+    font-size: 18px;
+  }
+
+  .hero-cta {
+    width: 225px;
+    height: 46px;
+
+    margin-top: 46px;
+
+    font-size: 16px;
+  }
+
+  .hero-wave {
+    height: 78px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: calc(100svh - 124px);
+
+    min-height: 620px;
+    max-height: none;
+  }
+
+  .hero-truck {
+    object-position: 69% center;
+  }
+
+  .hero-content {
+    width: calc(100% - 60px);
+    max-width: 350px;
+
+    margin-left: 34px;
+    padding-top: 78px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(28px, 7vw, 34px);
+    line-height: 1.08;
+  }
+
+  .hero-content p {
+    width: 100%;
+    max-width: 325px;
+
+    margin-top: 27px;
+
+    font-size: clamp(17px, 4.6vw, 20px);
+    line-height: 1.38;
+  }
+
+  .hero-cta {
+    width: 220px;
+    height: 48px;
+
+    margin-top: 43px;
+
+    border-radius: 14px;
+
+    font-size: 17px;
+  }
+
+  .hero-wave {
+    height: 72px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: calc(100svh - 124px);
+    min-height: 670px;
+    max-height: none;
+  }
+
+  .hero-truck {
+    object-fit: cover;
+
+    object-position: 38% center;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 48%;
+    max-width: 355px;
+
+    margin-left: 32px;
+    padding-top: 82px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(28px, 5vw, 35px);
+    line-height: 1.12;
+  }
+
+  .hero-content p {
+    width: 100%;
+    max-width: 350px;
+
+    margin-top: 28px;
+
+    font-size: clamp(17px, 3.3vw, 21px);
+    line-height: 1.45;
+  }
+
+  .hero-cta {
+    width: 285px;
+    max-width: 100%;
+    height: 54px;
+
+    margin-top: 46px;
+
+    border-radius: 14px;
+
+    font-size: 18px;
+  }
+
+  .hero-wave {
+    height: 72px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: calc(100svh - 124px);
+    min-height: 670px;
+    max-height: none;
+  }
+
+  .hero-truck {
+    object-fit: cover;
+
+    object-position: 20% center;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 310px;
+    max-width: calc(100% - 60px);
+
+    margin-left: 30px;
+    padding-top: 78px;
+  }
+
+  .hero-content h1 {
+    width: 310px;
+    max-width: 100%;
+
+    font-size: 30px;
+    line-height: 1.1;
+  }
+
+  .hero-content p {
+    width: 295px;
+    max-width: 100%;
+
+    margin-top: 26px;
+
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  .hero-cta {
+    width: 245px;
+    height: 50px;
+
+    margin-top: 42px;
+
+    border-radius: 14px;
+
+    font-size: 17px;
+  }
+
+  .hero-wave {
+    height: 72px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    min-height: 680px;
+  }
+
+  .hero-truck {
+    object-position: 17% center;
+  }
+
+  .hero-content {
+    width: 300px;
+    max-width: calc(100% - 52px);
+
+    margin-left: 26px;
+    padding-top: 74px;
+  }
+
+  .hero-content h1 {
+    width: 300px;
+
+    font-size: 29px;
+    line-height: 1.1;
+  }
+
+  .hero-content p {
+    width: 285px;
+
+    margin-top: 27px;
+
+    font-size: 17px;
+    line-height: 1.42;
+  }
+
+  .hero-cta {
+    width: 240px;
+    height: 50px;
+
+    margin-top: 38px;
+
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-section {
+    height: calc(100svh - 104px);
+    min-height: 630px;
+  }
+
+  .hero-truck {
+    object-position: 14% center;
+  }
+
+  .hero-content {
+    width: 285px;
+    max-width: calc(100% - 40px);
+
+    margin-left: 20px;
+    padding-top: 58px;
+  }
+
+  .hero-content h1 {
+    width: 285px;
+
+    font-size: 27px;
+    line-height: 1.1;
+  }
+
+  .hero-content p {
+    width: 270px;
+
+    margin-top: 24px;
+
+    font-size: 16px;
+    line-height: 1.42;
+  }
+
+  .hero-cta {
+    width: 215px;
+    height: 46px;
+
+    margin-top: 34px;
+
+    font-size: 16px;
+  }
+
+  .hero-wave {
+    height: 62px;
+  }
+}

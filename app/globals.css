@@ -1,0 +1,56 @@
+:root {
+  --color-white: #ffffff;
+  --color-navy: #10233f;
+  --color-blue: #2557a7;
+  --color-cyan: #2faadd;
+  --color-light-blue: #e7f6fb;
+  --color-black: #080808;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  background: var(--color-white);
+  color: var(--color-navy);
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+main > section:not(:first-child) {
+  padding-top: clamp(4rem, 8vw, 7rem) !important;
+  padding-bottom: clamp(4rem, 8vw, 7rem) !important;
+}

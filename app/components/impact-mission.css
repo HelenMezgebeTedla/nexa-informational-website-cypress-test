@@ -1,0 +1,153 @@
+.impact-mission-section {
+  width: 100%;
+  background: var(--color-white);
+  padding: 34px 22px 40px;
+}
+
+.impact-mission-container {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 60px;
+}
+
+.info-card {
+  min-height: 200px;
+  padding: 24px 26px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+
+  border-radius: 15px;
+
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+.info-icon {
+  width: 60px;
+  height: 50px;
+
+  flex: 0 0 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: var(--color-cyan);
+  color: var(--color-navy);
+}
+
+.info-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.info-card-content {
+  padding-top: 2px;
+}
+
+.info-card-content h3 {
+  margin: 0;
+
+  color: var(--color-white);
+
+  font-size: 29px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.info-card-content p {
+  margin: 12px 0 0;
+
+  color: var(--color-white);
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+@media (max-width: 900px) and (min-width: 769px) {
+  .impact-mission-container {
+    gap: 32px;
+  }
+
+  .info-card {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .impact-mission-section {
+    padding: 22px 0 28px;
+  }
+
+  .impact-mission-container {
+    width: 70%;
+    max-width: 320px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .info-card {
+    min-height: 148px;
+
+    padding: 20px 18px;
+
+    gap: 14px;
+
+    border-radius: 14px;
+  }
+
+  .info-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-basis: 38px;
+
+    border-radius: 10px;
+  }
+
+  .info-icon svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .info-card-content h3 {
+    font-size: 22px;
+  }
+
+  .info-card-content p {
+    margin-top: 10px;
+
+    font-size: 17px;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 430px) {
+  .impact-mission-container {
+    width: calc(100% - 80px);
+    max-width: 290px;
+  }
+
+  .info-card {
+    min-height: 148px;
+    padding: 19px 16px;
+  }
+
+  .info-card-content h3 {
+    font-size: 19px;
+  }
+
+  .info-card-content p {
+    font-size: 15px;
+  }
+}

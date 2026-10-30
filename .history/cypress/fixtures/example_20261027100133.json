@@ -1,0 +1,5 @@
+{
+  "name": "example",
+  "email": "example@example.com",
+  "message": "This is a sample Cypress fixture for the informational website."
+}

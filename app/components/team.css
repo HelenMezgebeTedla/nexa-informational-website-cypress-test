@@ -1,0 +1,134 @@
+.team-section {
+  background: var(--color-light-blue);
+  padding: 3.2rem 0 4.6rem;
+}
+
+.team-inner {
+  text-align: center;
+}
+
+.team-inner > h2 {
+  margin-bottom: 2.2rem;
+  font-size: clamp(1.8rem, 2.7vw, 2.2rem);
+  font-weight: 800;
+}
+
+.team-intro {
+  margin-bottom: 2.5rem;
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  line-height: 1.2;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member-helen,
+.team-member-purity,
+.team-member-shamy {
+  padding-top: 7.4rem;
+}
+
+.team-photo {
+  position: relative;
+  width: min(190px, 100%);
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.team-photo img {
+  object-fit: cover;
+}
+
+.team-member-jesca .team-photo img {
+  object-position: 50% 17%;
+}
+
+.team-member-purity .team-photo img {
+  object-position: 50% 14%;
+}
+
+.team-member-shamy .team-photo img {
+  object-position: 50% 16%;
+}
+
+.team-member h3 {
+  margin: 1rem 0 0.15rem;
+  color: var(--color-blue);
+  font-size: clamp(1rem, 1.45vw, 1.25rem);
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.team-member p {
+  margin: 0;
+  font-size: clamp(0.92rem, 1.2vw, 1.08rem);
+  line-height: 1.3;
+}
+
+@media (max-width: 980px) {
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 3rem;
+  }
+
+  .team-member-helen,
+  .team-member-purity,
+  .team-member-shamy {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-section {
+    padding: 3.7rem 0 5rem;
+  }
+
+  .team-inner {
+    width: min(calc(100% - 3rem), 540px);
+  }
+
+  .team-inner > h2 {
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+  }
+
+  .team-intro {
+    margin-bottom: 3rem;
+    font-size: 1.65rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 3.4rem;
+  }
+
+  .team-member-helen,
+  .team-member-purity,
+  .team-member-shamy {
+    padding-top: 0;
+  }
+
+  .team-photo {
+    width: 190px;
+  }
+
+  .team-member h3 {
+    margin-top: 1.35rem;
+    font-size: 1.35rem;
+  }
+
+  .team-member p {
+    font-size: 1.22rem;
+  }
+}
